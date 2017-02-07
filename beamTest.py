@@ -1,4 +1,6 @@
-# Import math functions
+# generates sample data for different dimensions and properties of an I-profile
+
+# import math functions
 import math
 import numpy as np
 
