@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-# Author: Sunny Islam
+
+# Author: Sunny Islam, 2017
 # import math functions
 
 import math
