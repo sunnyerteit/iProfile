@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 
 # Author: Sunny Islam, 2017
-# example.py asks for dimensions, and yield properties
+# example2.py asks for properties and yields properties
+# this subroutibe is suboptimal
 # sklearn features many machine learning models
 
 from sklearn import linear_model
@@ -28,17 +29,14 @@ y = df[:, 6:]
 # scikit mathemagics
 
 regr = linear_model.LinearRegression()
-regr.fit(X, y, sample_weight=None)
+regr.fit(y, X, sample_weight=None)
 
-# array of dimensions for the predictor
-
+# array of properties for the predictor
 test = np.array([
-    5,
-    10,
-    5,
-    10,
-    5,
-    10,
+    150,
+    3.0,
+    1000,
+    1000,
     ])
 test = np.transpose(test)
 print regr.predict(test)
