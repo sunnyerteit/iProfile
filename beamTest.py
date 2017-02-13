@@ -41,7 +41,7 @@ for a in range(n):
                              * j[d] * j[c] + (j[b] + j[d] + j[f] / 2)
                              * j[f] * j[c]) / A
 
-                        # neutral axis
+                        # midpoint
 
                         y_n = (j[b] + j[d] + j[f]) / 2
 
@@ -50,13 +50,13 @@ for a in range(n):
 
                         I_x1 = 0.08333 * j[a] * math.pow(j[b], 3) \
                             + j[a] * j[b] * math.pow(math.fabs(j[b] / 2
-                                - y_n), 2)
+                                - y), 2)
                         I_x2 = 0.08333 * j[c] * math.pow(j[d], 3) \
                             + j[c] * j[d] * math.pow(math.fabs(j[b]
-                                + j[d] / 2 - y_n), 2)
+                                + j[d] / 2 - y), 2)
                         I_x3 = 0.08333 * j[e] * math.pow(j[f], 3) \
                             + j[e] * j[f] * math.pow(math.fabs(j[b]
-                                + j[d] + j[f] / 2 - y_n), 2)
+                                + j[d] + j[f] / 2 - y), 2)
                         I_x = I_x1 + I_x2 + I_x3
 
                         # I_y is simple to calculate as the centroid of
